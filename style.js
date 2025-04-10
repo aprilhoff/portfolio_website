@@ -26,3 +26,31 @@ function styleBox(){
     }
 
 }
+
+// let output = document.querySelector(".output");
+// let one = document.querySelector(".one");
+
+// console.log(one)
+// console.log(output)
+
+// one.addEventListener('mouseover', function(){
+//     output.classList.toggle('output_1')
+// })
+// one.addEventListener('mouseout', function(){
+//     output.classList.remove('output_1')
+// })
+
+
+const output = document.querySelector(".output");
+const images = document.querySelectorAll(".img-hover");
+
+images.forEach(img => {
+    img.addEventListener('mouseover', () => {
+        const bg = img.getAttribute('data-bg');
+        output.style.backgroundImage = `url('${bg}')`;
+    });
+
+    img.addEventListener('mouseout', () => {
+        output.style.backgroundImage = ""; // or set to default background
+    });
+});

@@ -1,233 +1,6 @@
 @import url("https://use.typekit.net/dfa0lwf.css");
 
 
-html{
-    background-color: rgb(233, 233, 233);
-    transition: background-color 2s, color 2s, transform 2s;
-    
-}
-
-::-webkit-scrollbar{
-    display: none;
-}
-
-body{
-    margin: 2rem 0 2rem 2rem;
-}
-
-header{
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-bottom: 2rem;
-}
-
-    h1{
-        font-family: "citizen";
-        font-size: 15px;
-        font-weight: 200;
-    }
-
-    h2{
-        font-family: "citizen";
-        font-size: 15px;
-        font-weight: 200;
-
-    }
-
-    a{
-        color: black;
-        transition: background-color 2s, color 2s, transform 2s;
-
-    }
-    a:hover{
-        text-shadow: 0 0 10px rgb(255, 47, 186);
-    }
-
-
-
-
-.porfolio_images{
-    display: flex;
-    flex-direction: column;
-    position: fixed;;
-    width: 50%;
-    position: relative;
-}
-
-    img{
-        height: 10%;
-        width: auto;
-        margin-bottom: 10px;
-    }
-        img:hover{
-            height: 11%;
-            transition: height 0.3s ease-in-out;
-        }
-    
-        .image_hover_1{
-            left: 50%;
-            top: 10%;
-            width: 40vw;
-            height: 70vh;
-            position: fixed;
-            background-image: url(images_all/Screenshot\ 2025-02-23\ at\ 14.01.44.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-        }
-        .image_hover_2 {
-            left: 50%;
-            top: 10%;
-            width: 40vw;
-            height: 70vh;
-            position: fixed;
-            background-image: url(images_all/Screenshot\ 2025-02-23\ at\ 14.03.31.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-        }
-        .image_hover_3 {
-            left: 50%;
-            top: 10%;
-            width: 40vw;
-            height: 70vh;
-            position: fixed;
-            background-image: url(images_all/Screenshot\ 2025-02-23\ at\ 15.30.03.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-        } 
-        .image_hover_4 {
-            left: 50%;
-            top: 10%;
-            width: 40vw;
-            height: 70vh;
-            position: fixed;
-            background-image: url(images_all/Screenshot\ 2025-02-23\ at\ 15.35.00.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-        }
-        .image_hover_5 {
-            left: 50%;
-            top: 10%;
-            width: 40vw;
-            height: 70vh;
-            position: fixed;
-            background-image: url(images_all/Screenshot\ 2025-02-23\ at\ 15.36.02.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-        }
-        .image_hover_6 {
-            left: 50%;
-            top: 10%;
-            width: 40vw;
-            height: 70vh;
-            position: fixed;
-            background-image: url(images_all/Screen\ Recording\ 2025-02-24\ at\ 15.04.17.gif);
-            background-size:contain;
-            background-repeat: no-repeat;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-        }
-        .image_hover_7 {
-            left: 50%;
-            top: 10%;
-            width: 40vw;
-            height: 70vh;
-            position: fixed;
-            background-image: url(images_all/letter_render0001.gif);
-            background-size:contain;
-            background-repeat: no-repeat;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-        }
-        .image_hover_8 {
-            left: 50%;
-            top: 10%;
-            width: 40vw;
-            height: 70vh;
-            position: fixed;
-            background-image: url(images_all/1.gif);
-            background-size:contain;
-            background-repeat: no-repeat;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-        }
-        .image_hover_9 {
-            left: 50%;
-            top: 10%;
-            width: 40vw;
-            height: 70vh;
-            position: fixed;
-            background-image: url(images_all/2.gif);
-            background-size:contain;
-            background-repeat: no-repeat;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-        }
-        .image_hover_10 {
-            left: 50%;
-            top: 10%;
-            width: 40vw;
-            height: 70vh;
-            position: fixed;
-            background-image: url(images_all/3.gif);
-            background-size:contain;
-            background-repeat: no-repeat;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-        }
-    
-            
-            .porfolio_images > div:nth-child(1):hover .image_hover_1 {
-                opacity: 1;
-            }
-            .porfolio_images > div:nth-child(2):hover .image_hover_2 {
-                opacity: 1;
-            }
-            .porfolio_images > div:nth-child(3):hover .image_hover_3 {
-                opacity: 1;
-            }
-            .porfolio_images > div:nth-child(4):hover .image_hover_4 {
-                opacity: 1;
-            }
-            .porfolio_images > div:nth-child(5):hover .image_hover_5 {
-                opacity: 1;
-            }
-            .porfolio_images > div:nth-child(6):hover .image_hover_6 {
-                opacity: 1;
-            }
-            .porfolio_images > div:nth-child(7):hover .image_hover_7 {
-                opacity: 1;
-            }
-            .porfolio_images > div:nth-child(8):hover .image_hover_8 {
-                opacity: 1;
-            }
-            .porfolio_images > div:nth-child(9):hover .image_hover_9 {
-                opacity: 1;
-            }
-            .porfolio_images > div:nth-child(10):hover .image_hover_10 {
-                opacity: 1;
-            }
-        
-               
-
-footer{
-    top: 90%;
-    position: fixed;
-    right: 5%;
-}
-
-/* js */
-
-
 .html_js{
     background-color: black;
     color: whitesmoke;
@@ -254,4 +27,50 @@ input[type='range']::-webkit-slider-runnable-track {
 
   input[type='range']::-webkit-slider-thumb {
    margin-top: -4px;
+  } */
+
+
+  /* new styling */
+
+  .porfolio_images{
+    display: grid;
+    grid-template-columns: 10(4fr);
+    background-color: rgb(0, 255, 255);
+    width: 20rem;
+    height: 100vh;
   }
+
+  img{
+    width: 5%;
+    height: auto;
+  }
+
+  img:hover{
+    width: 7%;
+    height: auto;
+  }
+
+  h1{
+    font-family: "citizen";
+    font-size: 20px;
+    font-weight: 200;
+}
+
+h2{
+    font-family: "citizen";
+    font-size: 20px;
+    font-weight: 200;
+
+}
+
+.output{
+    display: block;
+    left: 40%;
+    top: 200px;
+    width: 50%;
+    height: 70%;
+    position: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
