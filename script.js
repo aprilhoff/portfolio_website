@@ -80,7 +80,6 @@ wiki.addEventListener("click", ()=>{
     <h1 class="next">></h1>
     </div>
     <p>Wikibook project uses the content from one of Wikipedia’s longest pages and translates the infromation into a book. Russia’s Invasion Of Ukraine served as an excellent basis for both a typographically provocative and highly personal Wikibook. I took it upon myself to highlight the monstrosities acted by Russia through typography. 
-
     </p>
     <img id="wiki-img" src="${wikiArray[wikiIndex]}" alt="">
 `
@@ -111,7 +110,6 @@ venn.addEventListener("click", ()=>{
     <h1 class="next">></h1>
     </div>
     <p>Home is a Venn Diagram explores the amalgamation of two contrasting yet eerily similar cultures that shape my identity. As a Global Nomad, I often find myself torn between a sense of belonging everywhere and nowhere at once. This inherent tension forms the foundation of this project, one marked by differing cultural influences that merge to make me. 
-
     </p>
     <img id="venn-img" src="${vennArray[vennIndex]}" alt="">
 `
@@ -212,5 +210,39 @@ manifesto.addEventListener("click", ()=>{
     document.querySelector(".back").addEventListener("click", () => {
         manifestoIndex = (manifestoIndex - 1 + manifestoArray.length) % manifestoArray.length;
         document.getElementById("carve-img").src = manifestoArray[manifestoIndex];
+    });
+})
+
+// style is not a 4 letter word
+
+
+
+let style = document.querySelector("#h")
+let styleArray = ["assets/style_1.gif", "assets/style_2.png", "assets/style_3.png", "assets/style_4.png"]
+let styleIndex = 0;
+
+
+style.addEventListener("click", ()=>{
+    output.innerHTML += `
+    <div class="nav">
+    <h1 class="back"><</h1>
+    <h1 class="next">></h1>
+    </div>
+    <p>Using excerpts from Mr Keedy's essay Style Is Not A Four Letter Word, Text On Web aims to physically depict what it is like to experience lack of stylisation and hyper ornamentation. This website does not have an opinion, it allows the readers to form one themselves or maybe even remain just as clueless as they did before the experience.
+    <br>
+    <br>
+    check out the live site here
+    </p>
+    <img id="carve-img" src="${styleArray[styleIndex]}" alt="">
+`
+    style.classList.add("green")
+
+    document.querySelector(".next").addEventListener("click", () => {
+        styleIndex = (styleIndex + 1) % styleArray.length;
+        document.getElementById("carve-img").src = styleArray[styleIndex];
+    });
+    document.querySelector(".back").addEventListener("click", () => {
+        styleIndex = (styleIndex - 1 + styleArray.length) % styleArray.length;
+        document.getElementById("carve-img").src = styleArray[styleIndex];
     });
 })
