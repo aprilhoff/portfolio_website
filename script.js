@@ -170,6 +170,7 @@ carve.addEventListener("click", ()=>{
     <h1 class="back"><</h1>
     <h1 class="next">></h1>
     </div>
+    <p>Carving Our Future is an auction event that aims to raise funds in support of Women's Reproductive Rights in the US. Hosted at the Leslie-Lohman Museum of Art, this event brings together a diverse group of eighteen female artists based in New York, each contributing unique sculptural works that pay homage to the ancient Venus Figurines.</p>
     <img id="carve-img" src="${carveArray[carveIndex]}" alt="">
 `
     carve.classList.add("green")
@@ -181,5 +182,35 @@ carve.addEventListener("click", ()=>{
     document.querySelector(".back").addEventListener("click", () => {
         carveIndex = (carveIndex - 1 + carveArray.length) % carveArray.length;
         document.getElementById("carve-img").src = carveArray[carveIndex];
+    });
+})
+
+// manifesto poster
+
+
+let manifesto = document.querySelector("#g")
+let manifestoArray = ["assets/manifesto_3.png","assets/manifesto_2.png"]
+let manifestoIndex = 0;
+
+
+manifesto.addEventListener("click", ()=>{
+    output.innerHTML += `
+    <div class="nav">
+    <h1 class="back"><</h1>
+    <h1 class="next">></h1>
+    </div>
+    <p>The Manifesto Poster project chooses a historical manifesto and creates two typographic posters in reference to the the context of the manifesto. Sister Corita Kent’s Ten Rules For Students and Teachers, written in the late 60s, reimagines the learning enviroment as a creative space. Made in collaboration with her students, Kent’s rules covey a harsh, honest and inspiring feeling. 
+    </p>
+    <img id="carve-img" src="${manifestoArray[manifestoIndex]}" alt="">
+`
+    manifesto.classList.add("green")
+
+    document.querySelector(".next").addEventListener("click", () => {
+        manifestoIndex = (manifestoIndex + 1) % manifestoArray.length;
+        document.getElementById("carve-img").src = manifestoArray[manifestoIndex];
+    });
+    document.querySelector(".back").addEventListener("click", () => {
+        manifestoIndex = (manifestoIndex - 1 + manifestoArray.length) % manifestoArray.length;
+        document.getElementById("carve-img").src = manifestoArray[manifestoIndex];
     });
 })
