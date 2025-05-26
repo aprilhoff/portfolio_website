@@ -7,6 +7,10 @@ let currentIndex = 0;
 
 
 prototyped.addEventListener("click", ()=>{
+    document.querySelectorAll(".green").forEach(el => el.classList.remove("green"));
+    output.innerHTML = "";
+    prototyped.classList.add("green")
+
     output.innerHTML += `
     <div class="nav">
     <h1 class="back"><</h1>
@@ -19,7 +23,6 @@ prototyped.addEventListener("click", ()=>{
     </p>
     <img id="proto-img" src="${prototypedArray[currentIndex]}" alt="">
 `
-    prototyped.classList.add("green")
 
      document.querySelector(".next").addEventListener("click", () => {
         currentIndex = (currentIndex + 1) % prototypedArray.length;
@@ -41,6 +44,9 @@ let danceIndex = 0;
 
 
 dance.addEventListener("click", ()=>{
+    document.querySelectorAll(".green").forEach(el => el.classList.remove("green"));
+    output.innerHTML = "";
+
     output.innerHTML += `
     <div class="nav">
     <h1 class="back"><</h1>
@@ -74,6 +80,8 @@ let wikiIndex = 0;
 
 
 wiki.addEventListener("click", ()=>{
+    document.querySelectorAll(".green").forEach(el => el.classList.remove("green"));
+    output.innerHTML = "";
     output.innerHTML += `
     <div class="nav">
     <h1 class="back"><</h1>
@@ -104,6 +112,8 @@ let vennIndex = 0;
 
 
 venn.addEventListener("click", ()=>{
+    document.querySelectorAll(".green").forEach(el => el.classList.remove("green"));
+    output.innerHTML = "";
     output.innerHTML += `
     <div class="nav">
     <h1 class="back"><</h1>
@@ -135,6 +145,8 @@ let momIndex = 0;
 
 
 mom.addEventListener("click", ()=>{
+    document.querySelectorAll(".green").forEach(el => el.classList.remove("green"));
+    output.innerHTML = "";
     output.innerHTML += `
     <div class="nav">
     <h1 class="back"><</h1>
@@ -163,6 +175,8 @@ let carveIndex = 0;
 
 
 carve.addEventListener("click", ()=>{
+    document.querySelectorAll(".green").forEach(el => el.classList.remove("green"));
+    output.innerHTML = "";
     output.innerHTML += `
     <div class="nav">
     <h1 class="back"><</h1>
@@ -192,6 +206,8 @@ let manifestoIndex = 0;
 
 
 manifesto.addEventListener("click", ()=>{
+    document.querySelectorAll(".green").forEach(el => el.classList.remove("green"));
+    output.innerHTML = "";
     output.innerHTML += `
     <div class="nav">
     <h1 class="back"><</h1>
@@ -223,6 +239,8 @@ let styleIndex = 0;
 
 
 style.addEventListener("click", ()=>{
+    document.querySelectorAll(".green").forEach(el => el.classList.remove("green"));
+    output.innerHTML = "";
     output.innerHTML += `
     <div class="nav">
     <h1 class="back"><</h1>
@@ -246,3 +264,112 @@ style.addEventListener("click", ()=>{
         document.getElementById("carve-img").src = styleArray[styleIndex];
     });
 })
+
+
+
+// jewelry
+
+
+let cad = document.querySelector("#i")
+let cadArray = ["assets/j_1.png", "assets/j_2.png", "assets/j_3.png", "assets/j_4.png", "assets/j_5.png"]
+let cadIndex = 0;
+
+
+cad.addEventListener("click", ()=>{
+    document.querySelectorAll(".green").forEach(el => el.classList.remove("green"));
+    output.innerHTML = "";
+    output.innerHTML += `
+    <div class="nav">
+    <h1 class="back"><</h1>
+    <h1 class="next">></h1>
+    </div>
+    <p>Collar Necklace created in Rhino and casted in Sterling Silver. *conceptual branding added as well
+
+    </p>
+    <img id="carve-img" src="${cadArray[cadIndex]}" alt="">
+`
+    cad.classList.add("green")
+
+    document.querySelector(".next").addEventListener("click", () => {
+        cadIndex = (cadIndex + 1) % cadArray.length;
+        document.getElementById("carve-img").src = cadArray[cadIndex];
+    });
+    document.querySelector(".back").addEventListener("click", () => {
+        cadIndex = (cadIndex - 1 + cadArray.length) % cadArray.length;
+        document.getElementById("carve-img").src = cadArray[cadIndex];
+    });
+})
+
+
+// show some solidarity
+
+
+let show = document.querySelector("#j")
+let showArray = ["assets/s_1.png", "assets/s_2.png", "assets/s_3.png"]
+let showIndex = 0;
+
+
+show.addEventListener("click", ()=>{
+    document.querySelectorAll(".green").forEach(el => el.classList.remove("green"));
+    output.innerHTML = "";
+    output.innerHTML += `
+    <div class="nav">
+    <h1 class="back"><</h1>
+    <h1 class="next">></h1>
+    </div>
+    <img id="carve-img" src="${showArray[showIndex]}" alt="">
+`
+    show.classList.add("green")
+
+    document.querySelector(".next").addEventListener("click", () => {
+        showIndex = (showIndex + 1) % showArray.length;
+        document.getElementById("carve-img").src = showArray[showIndex];
+    });
+    document.querySelector(".back").addEventListener("click", () => {
+        showIndex = (showIndex - 1 + showArray.length) % showArray.length;
+        document.getElementById("carve-img").src = showArray[showIndex];
+    });
+})
+
+
+
+
+// 3D work
+
+
+let three = document.querySelector("#k")
+let threeArray = ["assets/3_1.png", "assets/3_2.png", "assets/3_4.png"]
+let threeIndex = 0;
+
+
+three.addEventListener("click", ()=>{
+    document.querySelectorAll(".green").forEach(el => el.classList.remove("green"));
+    output.innerHTML = "";
+    output.innerHTML += `
+    <div class="nav">
+    <h1 class="back"><</h1>
+    <h1 class="next">></h1>
+    </div>
+    <img id="carve-img" src="${threeArray[threeIndex]}" alt="">
+`
+    three.classList.add("green")
+
+    document.querySelector(".next").addEventListener("click", () => {
+        threeIndex = (threeIndex + 1) % threeArray.length;
+        document.getElementById("carve-img").src = threeArray[threeIndex];
+    });
+    document.querySelector(".back").addEventListener("click", () => {
+        threeIndex = (threeIndex - 1 + threeArray.length) % threeArray.length;
+        document.getElementById("carve-img").src = threeArray[threeIndex];
+    });
+})
+
+
+
+
+
+
+
+
+
+

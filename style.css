@@ -114,3 +114,33 @@ img{
 .back{
     font-size: 100px;
 }
+
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: #57FF62;
+}
+
+
+@media only screen 
+  and (max-device-width: 550px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+@media screen and (max-width: 700px) {
+
+    .title{
+        width: 100%;
+    }
+
+    .grid{
+        grid-template-columns: .2fr 2fr;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+}
+
