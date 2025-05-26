@@ -19,7 +19,7 @@ prototyped.addEventListener("click", ()=>{
     <p>Prototyped is an ongoing online anthology of design works shared and collected amongst its community. The archive aims to allow designers to get access and inspiration from unusual and secluded works.
     <br>
     <br>
-    check out the live site here
+    <a href="https://aprilhoff.github.io/prototyped/index.html" target="_blank">check out the live site here</a>
     </p>
     <img id="proto-img" src="${prototypedArray[currentIndex]}" alt="">
 `
@@ -55,7 +55,7 @@ dance.addEventListener("click", ()=>{
     <p>This project was inspired by a book I purchased, which featured 66 of Hans Holbein's woodcuts from his series, The Dance of Death. Using Holbein's woodcuts as templates, I’ve created a digital version of the cards, preserving the historical essence of these powerful images while introducing contemporary elements. Through a website interface, users are invited to engage with the cards in a way that invites personal reflection on their own mortality.
     <br>
     <br>
-    check out the live site here
+    <a href="http://hoffa617.interactive.rodeo/studio/projects/Input_Output/index.html" target="_blank">check out the live site here</a>
     </p>
     <img id="dance-img" src="${danceArray[danceIndex]}" alt="">
 `
@@ -249,7 +249,7 @@ style.addEventListener("click", ()=>{
     <p>Using excerpts from Mr Keedy's essay Style Is Not A Four Letter Word, Text On Web aims to physically depict what it is like to experience lack of stylisation and hyper ornamentation. This website does not have an opinion, it allows the readers to form one themselves or maybe even remain just as clueless as they did before the experience.
     <br>
     <br>
-    check out the live site here
+    <a href="http://hoffa617.interactive.rodeo/studio/projects/Text_On_Web/index.html" target="_blank">check out the live site here</a>
     </p>
     <img id="carve-img" src="${styleArray[styleIndex]}" alt="">
 `

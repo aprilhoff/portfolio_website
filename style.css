@@ -122,7 +122,13 @@ a{
 a:hover{
     color: #57FF62;
 }
-
+h3{
+font-weight: 400;
+padding: 10px;
+}
+::selection{
+    background-color: #57FF62;
+}
 
 @media only screen 
   and (max-device-width: 550px) 
