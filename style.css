@@ -1,15 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Goudy+Bookletter+1911&display=swap');
+@import url("https://use.typekit.net/kaz6shd.css");
 
-@font-face {
-    font-family: takete;
-    src: url(assets/takete/takete-Regular\ copy.otf);
-}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Goudy Bookletter 1911", serif;
+   
     background-color: rgb(220, 220, 220);
 }
 html, body {
@@ -40,7 +36,6 @@ html, body {
 }
 
 span{
-    font-style: italic;
     font-weight: bold;
 }
 
@@ -56,9 +51,10 @@ p{
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 1.25em;
+    font-family: "marion-standard", serif;
+    font-weight: 400;
+    font-style: normal;
 }
-
-
 
 a{
     text-decoration: underline;
@@ -79,8 +75,16 @@ text-align: center;
 h1{
     font-size: 1.5em;
     text-align: center;
+    font-family: "marion-standard", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
+.dates{
+    font-family: "marion-standard", sans-serif;
+font-weight: 400;
+font-style: italic;
+}
 
 /* slider */
 .mySlides-ai, .mySlides-unsent, .mySlides-core03 {
