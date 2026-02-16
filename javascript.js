@@ -72,4 +72,29 @@ for (let slide of document.getElementsByClassName("mySlides-core03")) {
   });
 }
 
+// CORE03
+
+let pipencoIndex = 1;
+showPipenco(showPipenco);
+
+function showPipenco(n) {
+  let slides = document.getElementsByClassName("mySlides-Pipenco");
+  if (!slides.length) return;
+
+  if (n > slides.length) pipencoIndex = 1;
+  if (n < 1) pipencoIndex = slides.length;
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[pipencoIndex - 1].style.display = "block";
+}
+
+for (let slide of document.getElementsByClassName("mySlides-Pipenco")) {
+  slide.addEventListener("click", () => {
+    pipencoIndex++;
+    showPipenco(pipencoIndex);
+  });
+}
+
 

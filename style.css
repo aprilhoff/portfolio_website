@@ -5,8 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
-    background-color: rgb(220, 220, 220);
+
 }
 html, body {
     height: 100%;
@@ -15,7 +14,7 @@ html, body {
 
 .content {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: .5fr 2fr;
     height: 100vh; 
 }
 
@@ -25,7 +24,9 @@ html, body {
     top: 0;   
     align-self: start;
     height: 100vh;
-    overflow-y: auto;   
+    overflow-y: auto;  
+    background-color: rgb(27, 27, 30); 
+    color: rgb(220, 220, 220);
 }
 
 .right_side {
@@ -57,11 +58,12 @@ p{
 }
 
 a{
-    text-decoration: underline;
-    color: black;
+    text-decoration: none;
+    font-style: italic;
+    color: rgb(220, 220, 220);
 }
 a:hover{
-    font-style: italic;
+    text-decoration: underline;
 }
 
 
@@ -80,6 +82,26 @@ h1{
     font-style: normal;
 }
 
+.linktowork{
+    border-bottom: 1px rgb(220, 220, 220) solid;
+    margin-left: -20px;
+    margin-right: -20px;
+    top: 0;
+}
+
+h3{
+    border-top: 1px rgb(220, 220, 220) solid;
+    font-weight: 400;
+    font-style: italic;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+h3:hover{
+    background-color: rgb(220, 220, 220);
+   color: rgb(27, 27, 30); 
+}
+
+
 .dates{
     font-family: "marion-standard", sans-serif;
 font-weight: 400;
@@ -87,7 +109,7 @@ font-style: italic;
 }
 
 /* slider */
-.mySlides-ai, .mySlides-unsent, .mySlides-core03 {
+.mySlides-ai, .mySlides-unsent, .mySlides-core03, .myslides-Pipenco {
     cursor: e-resize;
 }
 
