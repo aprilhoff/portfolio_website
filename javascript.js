@@ -74,8 +74,9 @@ for (let slide of document.getElementsByClassName("mySlides-core03")) {
 
 // CORE03
 
+// PIPENCO
 let pipencoIndex = 1;
-showPipenco(showPipenco);
+showPipenco(pipencoIndex);
 
 function showPipenco(n) {
   let slides = document.getElementsByClassName("mySlides-Pipenco");
@@ -87,6 +88,7 @@ function showPipenco(n) {
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
+
   slides[pipencoIndex - 1].style.display = "block";
 }
 
@@ -96,5 +98,4 @@ for (let slide of document.getElementsByClassName("mySlides-Pipenco")) {
     showPipenco(pipencoIndex);
   });
 }
-
 
