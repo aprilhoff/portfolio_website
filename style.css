@@ -139,3 +139,13 @@ font-style: italic;
     font-size: 1.25em;
     text-decoration: underline;
 }
+
+.video_grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video_grid video{
+    width: 50%;
+}
