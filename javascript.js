@@ -99,3 +99,11 @@ for (let slide of document.getElementsByClassName("mySlides-Pipenco")) {
   });
 }
 
+function updateClock() {
+  const now = new Date();
+
+  const displayString = now.toLocaleString();
+  document.getElementById('clock').innerHTML = displayString;
+}
+setInterval(updateClock, 1000);
+updateClock(); 

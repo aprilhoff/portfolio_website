@@ -18,6 +18,10 @@ html, body {
     height: 100vh; 
 }
 
+.content a{
+    font-style: normal;
+}
+
 .left_side {
     padding: 20px;
     position: sticky; 
@@ -25,7 +29,7 @@ html, body {
     align-self: start;
     height: 100vh;
     overflow-y: auto;  
-    background-color: rgb(27, 27, 30); 
+    background-color: rgb(0, 0, 0); 
     color: rgb(220, 220, 220);
 }
 
@@ -37,7 +41,7 @@ html, body {
 }
 
 span{
-    font-weight: bold;
+    text-decoration: underline;
 }
 
 img{
@@ -49,9 +53,7 @@ img{
 }
 
 p{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-size: 1.25em;
+    font-size: 1.2em;
     font-family: "marion-standard", serif;
     font-weight: 400;
     font-style: normal;
@@ -59,11 +61,12 @@ p{
 
 a{
     text-decoration: none;
-    font-style: italic;
     color: rgb(220, 220, 220);
 }
 a:hover{
     text-decoration: underline;
+    font-style: italic;
+
 }
 
 
@@ -76,7 +79,7 @@ text-align: center;
 
 h1{
     font-size: 1.5em;
-    text-align: center;
+    text-align: left;
     font-family: "marion-standard", serif;
     font-weight: 400;
     font-style: normal;
@@ -92,9 +95,9 @@ h1{
 h3{
     border-top: 1px rgb(220, 220, 220) solid;
     font-weight: 400;
-    font-style: italic;
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 1.25rem;
 }
 h3:hover{
     background-color: rgb(220, 220, 220);
@@ -113,31 +116,41 @@ font-style: italic;
     cursor: e-resize;
 }
 
-
-@media (max-width:800px){
-    .content{
-        grid-template-rows: auto;
-        grid-template-columns: none;
+@media (max-width: 800px) {
+    .content {
+        display: block;
     }
-    .left_side , .right_side{
-        position: static;   
+
+    .left_side {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
         height: auto;
+        overflow-y: visible;
         border-left: none;
-    }
-    .Resume{
-        display: none;
-    }
-    .left_side{
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid rgb(255, 255, 255);
     }
 
-    
+    .right_side {
+        position: sticky;
+        height: auto;
+        overflow-y: visible;
+        border-left: none;
+        background-color: white;
+        /* Push down so content isn't hidden behind the fixed left_side */
+        /* Adjust this value to match the actual height of your left_side */
+        padding-top: 80px;
+        z-index: 100;
+    }
+
+    .linktowork{
+        display:none;
+    }
 }
 
 .pop{
     color: black;
-    font-size: 1.25em;
-    text-decoration: underline;
 }
 
 .video_grid{
@@ -148,4 +161,13 @@ font-style: italic;
 
 .video_grid video{
     width: 50%;
+}
+
+
+
+#clock{
+    font-size: 1.2em;
+    font-family: "marion-standard", serif;
+    font-weight: 400;
+    font-style: normal;
 }
