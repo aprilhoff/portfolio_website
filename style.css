@@ -171,3 +171,8 @@ font-style: italic;
     font-weight: 400;
     font-style: normal;
 }
+
+.imagesplit{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
