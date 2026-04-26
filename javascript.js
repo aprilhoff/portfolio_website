@@ -99,6 +99,32 @@ for (let slide of document.getElementsByClassName("mySlides-Pipenco")) {
   });
 }
 
+
+// MOTIFF
+let motiffIndex = 1;
+showMotiff(motiffIndex);
+
+function showMotiff(n) {
+  let slides = document.getElementsByClassName("mySlides-Motiff");
+  if (!slides.length) return;
+
+  if (n > slides.length) motiffIndex = 1;
+  if (n < 1) motiffIndex = slides.length;
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[motiffIndex - 1].style.display = "block";
+}
+
+for (let slide of document.getElementsByClassName("mySlides-Motiff")) {
+  slide.addEventListener("click", () => {
+    motiffIndex++;
+    showMotiff(motiffIndex);
+  });
+}
+
 function updateClock() {
   const now = new Date();
 
