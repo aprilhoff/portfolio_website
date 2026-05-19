@@ -116,7 +116,7 @@ font-style: italic;
     cursor: e-resize;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .content {
         display: block;
     }
