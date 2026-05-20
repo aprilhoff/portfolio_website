@@ -137,5 +137,11 @@ a{
         #text{
             text-indent: 130px;
         }
-    
+
+    #header{
+        display:block;
+    }
+    #links{
+        padding-top: 20px;
+    }
 }
