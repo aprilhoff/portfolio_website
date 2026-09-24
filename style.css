@@ -90,6 +90,9 @@ ul {
         .lowanensoi{
             margin-left: 550px;
         }
+        .storm{
+            margin-left: 200px;
+        }
 .slider{
     padding-bottom:20px;
 }
@@ -130,6 +133,9 @@ a{
             margin-left: 0px;  
         }
         .lowanensoi{
+            margin-left: 0px;
+        }
+        .storm{
             margin-left: 0px;
         }
         .description{
