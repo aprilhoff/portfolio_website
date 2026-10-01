@@ -154,6 +154,9 @@ a{
         #text{
             text-indent: 130px;
         }
+        .two{
+            margin-left: 0px;
+        }
 
     #header{
         display:block;
